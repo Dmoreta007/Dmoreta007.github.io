@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Smooth Move</title>
+  <script>
+    var colors = ["#8551AE", "#B6D02F", "#3152CE", "#EE2611", "#21DEC7"]
+
+    function changeMood(param1) {
+      value = param1;
+      switch(value) {
+      case "0": 
+        document.body.style.backgroundColor = colors [value]
+        break;
+      case 1:
+        document.body.style.backgroundColor = colors [value]
+         break;
+       case 2:
+        document.body.style.backgroundColor = colors [value]
+         break;
+       case 3:
+        document.body.style.backgroundColor = colors [value]
+         break;
+      default:
+        document.body.style.backgroundColor = '#21DEC7';
+      
+    }
+  }
+
+  </script>
+</head>
+  <body>
+   
+   <button onclick="changeMood(0)">Click Here!</button>
+   <button onclick="changeMood(1)">Not This one!</button>
+   <button onclick="changeMood(2)">Try Again!</button>
+   <button onclick="changeMood(3)">This one is Fine!</button>
+
+</body>
+
+</html>
